@@ -1,0 +1,147 @@
+@import 'tailwindcss';
+
+@source '../views/**/*.blade.php';
+@source '../js/**/*.js';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base {
+    html {
+        font-size: 16px;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        min-height: 100vh;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font: inherit;
+    }
+
+    button,
+    a,
+    input,
+    select,
+    textarea {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    input,
+    select,
+    textarea {
+        outline: none;
+    }
+
+    button:focus-visible,
+    a:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+        outline: 2px solid rgb(59 130 246);
+        outline-offset: 2px;
+    }
+}
+
+@media (min-width: 1280px) {
+    header {
+        min-height: 4rem;
+    }
+
+    header input[type='search'] {
+        min-height: 2.75rem;
+        font-size: 0.875rem;
+    }
+
+    main {
+        font-size: 0.9375rem;
+        line-height: 1.55;
+    }
+
+    main label {
+        font-size: 0.875rem;
+        line-height: 1.35rem;
+    }
+
+    main input,
+    main select,
+    main textarea {
+        font-size: 0.875rem;
+    }
+
+    main input[class*='h-10'],
+    main select[class*='h-10'],
+    main button[class*='h-10'],
+    main a[class*='h-10'] {
+        min-height: 2.65rem;
+    }
+
+    main input[class*='h-11'],
+    main select[class*='h-11'],
+    main button[class*='h-11'],
+    main a[class*='h-11'] {
+        min-height: 2.8rem;
+    }
+
+    main input[class*='h-12'],
+    main select[class*='h-12'],
+    main button[class*='h-12'],
+    main a[class*='h-12'] {
+        min-height: 3rem;
+    }
+
+    main table thead th {
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
+        font-size: 0.75rem;
+        line-height: 1.15rem;
+    }
+
+    main table tbody td {
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
+        font-size: 0.875rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        font-size: 0.95rem;
+    }
+
+    main input,
+    main select,
+    main textarea,
+    main label {
+        font-size: 0.9rem;
+    }
+
+    main table tbody td {
+        font-size: 0.9rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

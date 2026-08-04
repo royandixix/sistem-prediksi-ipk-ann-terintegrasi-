@@ -1,0 +1,28 @@
+{
+  "source_file": "Data Mhs.xlsx",
+  "source_rows": 9913,
+  "unique_students": 3388,
+  "available_terms": {
+    "GANJIL2425": 2810,
+    "GANJIL2526": 2598,
+    "GENAP2425": 2381,
+    "GENAP2526": 2124
+  },
+  "cohort_2023_students": 682,
+  "research_samples_included": 612,
+  "research_samples_excluded": 70,
+  "exclusion_reasons": {
+    "missing_terms": 69,
+    "estimated_ips_out_of_range": 1
+  },
+  "mapping": {
+    "ips_1": "Estimasi rata-rata IPS semester 1 berdasarkan IPK kumulatif pada GANJIL2425 dan IPS GANJIL2425",
+    "ips_2": "Sama dengan estimasi IPS semester 1 karena file sumber tidak memisahkan IPS semester 1 dan 2",
+    "ips_3": "IPS GANJIL2425",
+    "ips_4": "IPS GENAP2425",
+    "ips_5": "IPS GANJIL2526",
+    "ipk_akhir_aktual": "IPK GENAP2526"
+  },
+  "formula": "estimated_early_ips = ((3 * IPK_GANJIL2425) - IPS_GANJIL2425) / 2",
+  "important_note": "IPS1 dan IPS2 adalah estimasi kompatibilitas. Untuk hasil akademik final, ganti dengan data IPS semester 1 dan 2 asli jika tersedia."
+}
